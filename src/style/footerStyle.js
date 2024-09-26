@@ -59,5 +59,22 @@ export const FooterStyle = styled.footer`
         }
     }
 
+    #nomes ul{
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 24px;
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1E1E1E;
+            font-weight: 600;
+        }
+    }
+
 
 `

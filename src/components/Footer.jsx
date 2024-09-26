@@ -36,7 +36,7 @@ const Footer =()=> {
 
             
 
-            <div id="uteis">
+            <div id="nomes">
                 <ul>
                     <li><a href="">Ianny Raquel</a></li>
                     <li><a href="">Jean Matheus</a></li>
