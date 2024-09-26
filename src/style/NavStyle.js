@@ -19,7 +19,7 @@ export const NavStyle = styled.header `
             list-style: none;
         }
 
-        li a {
+        a {
             text-decoration: none;
             color: #fff;
             font-weight: 500;
