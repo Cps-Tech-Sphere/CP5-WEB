@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { NavStyle } from "../style/NavStyle"
 import Logo from "../assets/Imagens/Logos/Logo.png"
-import Cart from "../assets/Imagens/Icons/cart.png"
+import { IoPersonCircleSharp } from "react-icons/io5";
 
 const Nav =()=> {
 
@@ -18,12 +18,13 @@ const Nav =()=> {
                     <Link to="/">Início</Link>
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/sobre">Sobre</Link>
-                    <Link to="/login">Login</Link>
                 </ul>
             </div>
 
-            <div className="carrinho">
-                <img src={Cart} alt="carrinho" />
+            <div id="perfil">
+                <Link to="/login">
+                    <IoPersonCircleSharp/>
+                </Link>
             </div>
         </NavStyle>
     )

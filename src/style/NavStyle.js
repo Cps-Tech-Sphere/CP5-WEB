@@ -23,11 +23,18 @@ export const NavStyle = styled.header `
             text-decoration: none;
             color: #fff;
             font-weight: 500;
+            font-size: 20px;
         }
     }
 
-    .carrinho {
-        width: 30px;
-        height: auto;
+    #perfil {
+        align-items: center;
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 50px;
+        }
     }
 `
