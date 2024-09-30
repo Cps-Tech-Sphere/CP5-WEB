@@ -92,6 +92,7 @@ export const HomeStyled = styled.main`
         color: #1E1E1E;
         border: none;
         border-radius: 12px;
+        cursor: pointer;
     }
 
     .avaliacoes{
