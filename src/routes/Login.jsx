@@ -26,7 +26,7 @@ const Login = () => {
         Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
       sessionStorage.setItem('usuario', usuario.current.value);
       sessionStorage.setItem('senha', token);
-      navigate('/cadastroproduto'); // Redireciona para a página de cadastro de produto
+      navigate('/cadastrarproduto'); // Redireciona para a página de cadastro de produto
     } else {
       alert('Usuário/Senha inválidos');
     }
