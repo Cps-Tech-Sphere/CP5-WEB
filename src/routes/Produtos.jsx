@@ -20,6 +20,7 @@ const Produtos = () => {
                 {produtos.map((produto) => (
                 <li key={produto.id} className="item-produtos">
                     <img src={produto.urlImagem} alt={`Imagem de ${produto.nome}`} />
+                    <h3>{produto.nome}</h3>
                     <p>{produto.descricao}</p>
                     <h3>R$ {produto.valor}</h3>
                     <button>Comprar</button>

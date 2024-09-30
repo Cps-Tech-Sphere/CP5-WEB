@@ -1,4 +1,9 @@
 import { HomeStyled } from "../style/HomeStyle"
+import BWGY from "../assets/Imagens/Produtos/bwgy.png"
+import Andarilha from "../assets/Imagens/Produtos/Andarilha.png"
+import ATH35 from "../assets/Imagens/Produtos/ATH35.png"
+import MUKKU from "../assets/Imagens/Produtos/MUKKU 2024.png"
+import P339ols from "../assets/Imagens/Produtos/Pony 339ols.png"
 
 const Home =()=>{
 
@@ -23,33 +28,38 @@ const Home =()=>{
                 <ul className="lista-produtos">
 
                     <li className="item-produtos">
-                        <img src="" alt="produto 1" />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <h3>R$XX,xx</h3>
+                        <img src={BWGY} alt="produto 1" />
+                        <h3>BWGY 180ols</h3>
+                        <p>Íon de lítio de 500Wh, autonomia de até 80 km.</p>
+                        <h3>R$12566</h3>
                         <button>Comprar</button>
                     </li>
                     <li className="item-produtos">
-                        <img src="" alt="produto 2" />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <h3>R$XX,xx</h3>
+                        <img src={Andarilha} alt="produto 2" />
+                        <h3>Andarilha</h3>
+                        <p> Íon de lítio de 400Wh, recarga em 5 horas.</p>
+                        <h3>R$7599</h3>
                         <button>Comprar</button>
                     </li>
                     <li className="item-produtos">
-                        <img src="" alt="produto 3" />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <h3>R$XX,xx</h3>
+                        <img src={ATH35} alt="produto 3" />
+                        <h3>ATH35</h3>
+                        <p>Íon de lítio de 600Wh, autonomia de até 100 km.</p>
+                        <h3>R$9450</h3>
                         <button>Comprar</button>
                     </li>
                     <li className="item-produtos">
-                        <img src="" alt="produto 4" />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <h3>R$XX,xx</h3>
+                        <img src={MUKKU} alt="produto 4" />
+                        <h3>MUKKU 2024</h3>
+                        <p>Removível de 300Wh, recarga em 3 horas.</p>
+                        <h3>R$10988</h3>
                         <button>Comprar</button>
                     </li>
                     <li className="item-produtos">
-                        <img src="" alt=" produto 5" />
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <h3>R$XX,xx</h3>
+                        <img src={P339ols} alt=" produto 5" />
+                        <h3>Pony 339ols</h3>
+                        <p>750Wh, autonomia de até 120 km.</p>
+                        <h3>R$8455</h3>
                         <button>Comprar</button>
                     </li>
                 </ul>

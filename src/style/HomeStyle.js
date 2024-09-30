@@ -54,18 +54,22 @@ export const HomeStyled = styled.main`
         align-items: center;
         list-style-type: none;
         padding-top: 100px;
-        gap: 32px;
+        gap: 24px;
     }
 
     .item-produtos{
+        min-width: 260px;
+        max-width: 260px;
+        min-height: 350px;
+        max-height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         border: solid 3px #C7EA46;
         border-radius: 24px;
         padding: 24px;
-        padding-right: 2px;
     }
 
     .item-produtos img{
@@ -86,8 +90,7 @@ export const HomeStyled = styled.main`
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 126px;
-        height: 32px;
+        padding: 10px;
         background-color: #C7EA46;
         color: #1E1E1E;
         border: none;
