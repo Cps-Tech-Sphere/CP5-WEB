@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavLogin from '../components/NavLogin.jsx';
+import { CadastroStyle } from '../style/CadastroStyle.js';
 
 const CadastroProduto = () => {
   const [produto, setProduto] = useState({ nome: '', descricao: '', valor: '', urlImagem: '' });
@@ -26,59 +27,64 @@ const CadastroProduto = () => {
   };
 
   return (
-    <>
+    <CadastroStyle>
         <NavLogin/>
         <section className="container">
-            <h1>Cadastro de Produto</h1>
             <form className="produto-form" onSubmit={handleSubmit}>
+              <h1 className='title-form'>Cadastro de Produto</h1>
+                
                 <div className="w-input">
-                <input
-                    type="text"
-                    name="nome"
-                    value={produto.nome}
-                    onChange={handleChange}
-                    placeholder="Nome do Produto"
-                    required
-                />
+                  <span className='subtitle-form'>Nome do Produto:</span>
+                  <input
+                      type="text"
+                      name="nome"
+                      value={produto.nome}
+                      onChange={handleChange}
+                      required
+                  />
                 </div>
+
                 <div className="w-input">
-                <input
-                    type="text"
-                    name="descricao"
-                    value={produto.descricao}
-                    onChange={handleChange}
-                    placeholder="Descrição"
-                    required
-                />
+                  <span className='subtitle-form'>Descrição:</span>
+                  <input
+                      type="ob"
+                      name="descricao"
+                      value={produto.descricao}
+                      onChange={handleChange}
+                      required
+                  />
                 </div>
+
                 <div className="w-input">
-                <input
-                    type="number"
-                    name="valor"
-                    value={produto.valor}
-                    onChange={handleChange}
-                    placeholder="Valor do Produto"
-                    required
-                />
+                  <span className='subtitle-form'>Valor:</span>
+                  <input
+                      type="number"
+                      name="valor"
+                      value={produto.valor}
+                      onChange={handleChange}
+                      required
+                  />
                 </div>
+
                 <div className="w-input">
-                <input
-                    type="text"
-                    name="urlImagem"
-                    value={produto.urlImagem}
-                    onChange={handleChange}
-                    placeholder="URL da Imagem"
-                    required
-                />
+                  <span className='subtitle-form'>Image URL:</span>
+                  <input
+                      type="text"
+                      name="urlImagem"
+                      value={produto.urlImagem}
+                      onChange={handleChange}
+                      required
+                  />
                 </div>
+
                 <div className="produto-btn">
-                <button type="submit" className="produto-form-btn">
-                    Cadastrar Produto
-                </button>
+                  <button type="submit" className="produto-form-btn">
+                      Cadastrar Produto
+                  </button>
                 </div>
             </form>
         </section>
-    </>
+    </CadastroStyle>
     
   );
 };

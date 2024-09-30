@@ -23,7 +23,7 @@ const NavLogin = () => {
   return (
     <>
       <div id="login_nav">
-        <Link to="/cadastroproduto">Cadastrar Produtos</Link>
+        <Link to="/cadastrarproduto">Cadastrar Produtos</Link>
         <Link to="/listaprodutos">Lista de Produtos</Link>
       </div>
 

@@ -57,7 +57,6 @@ const Login = () => {
                                 className="input-form"
                                 id="usuario"
                                 ref={usuario}
-                                placeholder="Usuário"
                             />
                         </div>
 
@@ -68,7 +67,6 @@ const Login = () => {
                                 className="input-form"
                                 id="senha"
                                 ref={senha}
-                                placeholder="Senha"
                             />
                         </div>
 
