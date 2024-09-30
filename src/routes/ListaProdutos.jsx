@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NavLogin from '../components/NavLogin';
+import { ListaStyle } from '../style/ListaStyle';
+import { MdDelete } from "react-icons/md";
+import { MdAddToPhotos } from "react-icons/md";
 
 const ListaProdutos = () => {
   const [produtos, setProdutos] = useState([]);
@@ -24,45 +27,51 @@ const ListaProdutos = () => {
   };
 
   return (
-    <>
+    <ListaStyle>
         <NavLogin/>
         <section className="container">
-            <h1>Lista de Produtos</h1>
-            <table className="tabela-produtos">
-                <thead>
-                <tr>
-                    <th>Imagem</th>
-                    <th>Nome</th>
-                    <th>Descrição</th>
-                    <th>Valor</th>
-                    <th>Ações</th>
-                </tr>
-                </thead>
-                <tbody>
-                {produtos.map((produto) => (
-                    <tr key={produto.id}>
-                    <td>
-                        <img src={produto.urlImagem} alt={produto.nome} style={{ width: '100px', height: '100px' }} />
-                    </td>
-                    <td>{produto.nome}</td>
-                    <td>{produto.descricao}</td>
-                    <td>R$ {produto.valor}</td>
-                    <td>
-                        <button className="btn-excluir" onClick={() => excluirProduto(produto.id)}>
-                        Excluir
-                        </button>
-                    </td>
-                    </tr>
-                ))}
-                </tbody>
-            </table>
+            <h1 className='title-lista'>Lista de Produtos</h1>
+
             <div className="produto-btn">
                 <button onClick={() => navigate('/cadastrarproduto')} className="produto-form-btn">
-                Cadastrar Novo Produto
+                <MdAddToPhotos /> Adicionar
                 </button>
             </div>
+
+            <div className='table-container'>
+              <table className="tabela-produtos">
+                  <thead>
+                    <tr>
+                        <th>Imagem</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    {produtos.map((produto) => (
+                        <tr key={produto.id}>
+                          <td>
+                            <img src={produto.urlImagem} alt={produto.nome} className='nome' style={{ width: '100px', height: '100px' }} />
+                          </td>
+                            <td className='nome'>{produto.nome}</td>
+                            <td className="descricao">{produto.descricao}</td>
+                            <td className='nome'>R$ {produto.valor}</td>
+                          <td>
+                              <button className="btn-excluir" onClick={() => excluirProduto(produto.id)}>
+                              <MdDelete />
+                              </button>
+                          </td>
+                        </tr>
+                    ))}
+                  </tbody>
+              </table>
+            </div>
+            
         </section>
-    </>
+    </ListaStyle>
     
   );
 };
