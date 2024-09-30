@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import NavLogin from '../components/NavLogin';
 
 const ListaProdutos = () => {
   const [produtos, setProdutos] = useState([]);
@@ -23,42 +24,46 @@ const ListaProdutos = () => {
   };
 
   return (
-    <section className="container">
-      <h1>Lista de Produtos</h1>
-      <table className="tabela-produtos">
-        <thead>
-          <tr>
-            <th>Imagem</th>
-            <th>Nome</th>
-            <th>Descrição</th>
-            <th>Valor</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          {produtos.map((produto) => (
-            <tr key={produto.id}>
-              <td>
-                <img src={produto.urlImagem} alt={produto.nome} style={{ width: '100px', height: '100px' }} />
-              </td>
-              <td>{produto.nome}</td>
-              <td>{produto.descricao}</td>
-              <td>R$ {produto.valor}</td>
-              <td>
-                <button className="btn-excluir" onClick={() => excluirProduto(produto.id)}>
-                  Excluir
+    <>
+        <NavLogin/>
+        <section className="container">
+            <h1>Lista de Produtos</h1>
+            <table className="tabela-produtos">
+                <thead>
+                <tr>
+                    <th>Imagem</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+                </thead>
+                <tbody>
+                {produtos.map((produto) => (
+                    <tr key={produto.id}>
+                    <td>
+                        <img src={produto.urlImagem} alt={produto.nome} style={{ width: '100px', height: '100px' }} />
+                    </td>
+                    <td>{produto.nome}</td>
+                    <td>{produto.descricao}</td>
+                    <td>R$ {produto.valor}</td>
+                    <td>
+                        <button className="btn-excluir" onClick={() => excluirProduto(produto.id)}>
+                        Excluir
+                        </button>
+                    </td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+            <div className="produto-btn">
+                <button onClick={() => navigate('/cadastrarproduto')} className="produto-form-btn">
+                Cadastrar Novo Produto
                 </button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <div className="produto-btn">
-        <button onClick={() => navigate('/cadastrarproduto')} className="produto-form-btn">
-          Cadastrar Novo Produto
-        </button>
-      </div>
-    </section>
+            </div>
+        </section>
+    </>
+    
   );
 };
 
