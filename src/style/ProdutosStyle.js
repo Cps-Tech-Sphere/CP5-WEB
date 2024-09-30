@@ -10,13 +10,23 @@ export const ProdutosStyle = styled.main`
         justify-content: center;
     }
 
+    .vitrine-produtos{
+        padding: 5%;
+    }
+
+    .produto-title{
+        font-size: 36px;
+        font-weight: 500;
+        color: #C7EA46;
+    }
+
     .lista-produtos {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         list-style-type: none;
-        padding: 100px 0;
+        padding: 50px 0 100px;
         gap: 32px;
     }
 

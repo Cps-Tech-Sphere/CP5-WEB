@@ -17,9 +17,9 @@ const Produtos = () => {
         <section className="slideshow">
             <img src="" alt="slideshow1" />
         </section>
-                
+
         <section className="vitrine-produtos">
-            <h1>Os Nossos Produtos</h1>
+            <h1 className='produto-title'>Os Nossos Produtos</h1>
             <ul className="lista-produtos">
                 {produtos.map((produto) => (
                 <li key={produto.id} className="item-produtos">
