@@ -53,6 +53,7 @@ export const LoginStyle = styled.main`
 
         .login-btn {
             padding-top: 12px;
+            text-align: center;
         }
 
         button {

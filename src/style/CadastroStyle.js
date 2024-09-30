@@ -42,6 +42,7 @@ export const CadastroStyle = styled.main`
 
         .produto-btn {
             padding-top: 12px;
+            text-align: center;
         }
 
         button {

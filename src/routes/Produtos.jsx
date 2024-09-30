@@ -14,6 +14,10 @@ const Produtos = () => {
 
   return (
     <ProdutosStyle>
+        <section className="slideshow">
+            <img src="" alt="slideshow1" />
+        </section>
+                
         <section className="vitrine-produtos">
             <h1>Os Nossos Produtos</h1>
             <ul className="lista-produtos">

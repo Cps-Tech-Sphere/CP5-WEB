@@ -45,7 +45,7 @@ export const NavLoginStyle = styled.nav`
             font-weight: 600;
             color: #1E1E1E;
             border: none;
-            border-radius: 100%;
+            border-radius: 20px;
             cursor: pointer;
         }
         

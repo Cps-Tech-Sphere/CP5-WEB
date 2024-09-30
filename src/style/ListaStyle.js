@@ -30,6 +30,7 @@ export const ListaStyle = styled.main`
     }
 
     .table-container {
+        padding-bottom: 100px;
         display: flex;
         justify-content: center;
         align-content: center;

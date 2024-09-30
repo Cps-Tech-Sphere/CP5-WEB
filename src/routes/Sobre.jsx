@@ -1,5 +1,10 @@
 import { SobreStyle } from "../style/SobreStyle";
 import imagemtema from "../assets/Imagens/img/imagemtema.png";
+import Ianny from "../assets/Imagens/Equipe/Ianny.jpeg"
+import Jean from "../assets/Imagens/Equipe/Jean.jpeg"
+import Joao from "../assets/Imagens/Equipe/Joao.jpeg"
+import Malice from "../assets/Imagens/Equipe/Malice.jpeg"
+import Thiago from "../assets/Imagens/Equipe/Thiago.jpeg"
 
 const Sobre = () => {
 
@@ -24,7 +29,7 @@ const Sobre = () => {
             <section className="container-integrantes">
                 <ul className="lista-integrantes">
                     <li className="item-integrantes">
-                        <img src="https://via.placeholder.com/150" alt="Foto Integrante 1" />
+                        <img src={Ianny} alt="Foto Integrante 1" />
                         <div>
                         <h1>Ianny Raquel</h1>
                         <p>
@@ -37,7 +42,7 @@ const Sobre = () => {
                     </li>
 
                     <li className="item-integrantes">
-                        <img src="https://via.placeholder.com/150" alt="Foto Integrante 2" />
+                        <img src={Jean} alt="Foto Integrante 2" />
                         <div>
                         <h1>Jean Matheus</h1>
                         <p>
@@ -49,7 +54,7 @@ const Sobre = () => {
                     </li>
 
                     <li className="item-integrantes">
-                        <img src="https://via.placeholder.com/150" alt="Foto Integrante 3" />
+                        <img src={Joao} alt="Foto Integrante 3" />
                         <div>
                         <h1>João Victor Soave</h1>
                         <p>
@@ -62,7 +67,7 @@ const Sobre = () => {
                     </li>
 
                     <li className="item-integrantes">
-                        <img src="https://via.placeholder.com/150" alt="Foto Integrante 4" />
+                        <img src={Malice} alt="Foto Integrante 4" />
                         <div>
                         <h1>Maria Alice</h1>
                         <p>
@@ -75,7 +80,7 @@ const Sobre = () => {
                     </li>
 
                     <li className="item-integrantes">
-                        <img src="https://via.placeholder.com/150" alt="Foto Integrante 5" />
+                        <img src={Thiago} alt="Foto Integrante 5" />
                         <div>
                         <h1>Thiago Oliveira</h1>
                         <p>

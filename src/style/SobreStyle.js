@@ -2,15 +2,12 @@ import styled from "styled-components";
 
 export const SobreStyle = styled.main`
 
-    
-
-
     .imagem-tema img {
         width: 100%;
     }
 
     .sobrenos {
-        margin: 55px;
+        padding: 3% 5%;
     }
 
     .sobrenos h1 {
@@ -29,9 +26,7 @@ export const SobreStyle = styled.main`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh; 
-        margin-top: 40px;
-        margin-bottom: 40px;
+        padding-bottom: 100px;
     }
 
     .lista-integrantes {

@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const ProdutosStyle = styled.main`
 
+    .slideshow{
+        width: 100%;
+        height: 603px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .lista-produtos {
         display: flex;
         flex-wrap: wrap;
