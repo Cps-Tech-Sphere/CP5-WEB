@@ -1,0 +1,15 @@
+{
+    "usuarios": [
+      {
+        "id": "1",
+        "usuario": "Admin",
+        "senha": "12345"
+      },
+      {
+        "id": "2",
+        "usuario": "user",
+        "senha": "senha"
+      }
+    ],
+    "produtos": []
+  }
