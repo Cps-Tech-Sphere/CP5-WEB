@@ -118,14 +118,58 @@ export const HomeStyled = styled.main`
         background: #4B4B4B;
     }
 
-    .avaliacoes{
+    .avaliacoes-container{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        width: 835px;
-        height: 294px;
-        background-color: #C7EA;
-        margin: 0 0 100px;
+        justify-content: center;
+        padding-bottom: 100px;
+        gap: 48px;
     }
+
+    .avaliacoes-container .avaliacoes-title{
+        font-size: 48px;
+        color: #C7EA46;
+    }
+
+    .depoimento-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 60%;
+        min-height: 100px;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto 24px; /* Centraliza horizontalmente */
+        background-color: #B4BD91;
+        border-radius: 20px;
+        box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .depoimento-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .depoimento-content p{
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+
+        span {
+            color: #C8FE00;
+            font-size: 24px;
+        }
+
+        .nome{
+            font-size: 20px;
+            color: #1E1E1E;
+            font-weight: 600;
+        }
+    }
+
+
 
 `

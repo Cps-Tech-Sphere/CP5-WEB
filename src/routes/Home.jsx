@@ -4,6 +4,9 @@ import Andarilha from "../assets/Imagens/Produtos/Andarilha.png"
 import ATH35 from "../assets/Imagens/Produtos/ATH35.png"
 import MUKKU from "../assets/Imagens/Produtos/MUKKU 2024.png"
 import P339ols from "../assets/Imagens/Produtos/Pony 339ols.png"
+import { FaStar } from "react-icons/fa";
+import Avatar1 from "../assets/Imagens/Avatar/avatar1.png"
+import Avatar2 from "../assets/Imagens/Avatar/avatar2.png"
 
 const Home =()=>{
 
@@ -67,8 +70,43 @@ const Home =()=>{
 
             </section>
 
-            <section className="avaliacoes" id="avaliacao">
-                <img src="" alt="Avaliações" />
+            <section className="avaliacoes-container">
+                <h1 className="avaliacoes-title">Avaliações</h1>
+                
+                <div className="depoimentos">
+                    
+                    <div className="depoimento-content">
+                        <img src={Avatar1} alt="avatar" className="depoimento-avatar"/>
+                        <div className="avaliacao">
+                            <p> <span className="nome">Ítalo Fernandez</span>
+                                <span>
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                </span>
+                            </p>
+                            <p>"Bike elétrica com ótimo desempenho e autonomia. Design moderno e suporte atencioso. Recomendo!"</p>
+                        </div>
+                    </div>
+                        
+                    <div className="depoimento-content">
+                        <img src={Avatar2} alt="avatar" className="depoimento-avatar"/>
+                        <div className="avaliacao">
+                            <p> <span className="nome">Ellen Gonçalves</span>
+                                <span>
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                    <FaStar />
+                                </span>
+                            </p>
+                            <p>"Bicicleta confortável e potente, perfeita para o dia a dia. Entrega rápida e suporte eficiente!"</p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </HomeStyled>
