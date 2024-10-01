@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImage from "../assets/Imagens/img/image-background.jpg"
+import backgroundImage from "../assets/Imagens/Banners/image-background.jpg"
 
 export const LoginStyle = styled.main`
 

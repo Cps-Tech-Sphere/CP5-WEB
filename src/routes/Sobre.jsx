@@ -1,5 +1,5 @@
 import { SobreStyle } from "../style/SobreStyle";
-import imagemtema from "../assets/Imagens/img/imagemtema.png";
+import imagemtema from "../assets/Imagens/Banners/imagemtema.png";
 import Ianny from "../assets/Imagens/Equipe/Ianny.jpeg"
 import Jean from "../assets/Imagens/Equipe/Jean.jpeg"
 import Joao from "../assets/Imagens/Equipe/Joao.jpeg"

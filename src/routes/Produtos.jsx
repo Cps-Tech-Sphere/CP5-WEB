@@ -1,7 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import { ProdutosStyle } from '../style/ProdutosStyle';
+import Banner1 from "../assets/Imagens/Banners/banner-produto1.png";
+import Banner2 from "../assets/Imagens/Banners/banner-produto2.png";
+import Banner3 from "../assets/Imagens/Banners/banner-produto3.png";
 
 const Produtos = () => {
+
+  const slideshowImages = [
+      Banner1,
+      Banner2,
+      Banner3,
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slideshowImages.length);
+  };
+
+  useEffect(() => {
+      const intervalId = setInterval(nextSlide, 3000); // Muda a imagem a cada 3 segundos
+
+      return () => clearInterval(intervalId); // Limpa o intervalo ao desmontar o componente
+  }, []);
+
+
   const [produtos, setProdutos] = useState([]);
 
   // Função para buscar os produtos do JSON Server
@@ -14,8 +37,12 @@ const Produtos = () => {
 
   return (
     <ProdutosStyle>
-        <section className="slideshow">
-            <img src="" alt="slideshow1" />
+        <section className="slideshow" style={{ width: '100%', height: 'auto'}}>
+            <img
+              src={slideshowImages[currentIndex]}
+              alt={`slideshow${currentIndex + 1}`}
+              style={{ width: '100%', height: 'auto' }}
+              />
         </section>
 
         <section className="vitrine-produtos">
