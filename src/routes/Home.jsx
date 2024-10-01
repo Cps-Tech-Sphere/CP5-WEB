@@ -25,8 +25,9 @@ const Home =()=>{
 
                 </div>
 
-                <ul className="lista-produtos">
+                <h1 className="card-title">Os Nosso Produtos</h1>
 
+                <ul className="lista-produtos">
                     <li className="item-produtos">
                         <img src={BWGY} alt="produto 1" />
                         <h3>BWGY 180ols</h3>

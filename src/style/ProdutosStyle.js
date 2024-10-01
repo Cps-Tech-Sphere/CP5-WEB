@@ -26,7 +26,7 @@ export const ProdutosStyle = styled.main`
         justify-content: center;
         align-items: center;
         list-style-type: none;
-        padding: 50px 0 100px;
+        padding: 50px 0;
         gap: 32px;
     }
 

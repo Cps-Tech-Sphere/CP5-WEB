@@ -48,12 +48,19 @@ export const HomeStyled = styled.main`
         border-radius: 12px;
     }
 
+    .card-title{
+        padding-top: 100px ;
+        font-size: 48px;
+        font-weight: 600;
+        color: #C7EA46;
+    }
+
     .lista-produtos{
         display: flex;
         justify-content: center;
         align-items: center;
         list-style-type: none;
-        padding-top: 100px;
+        padding-top: 50px;
         gap: 24px;
     }
 
@@ -118,7 +125,7 @@ export const HomeStyled = styled.main`
         width: 835px;
         height: 294px;
         background-color: #C7EA;
-        margin: 100px 0;
+        margin: 0 0 100px;
     }
 
 `
