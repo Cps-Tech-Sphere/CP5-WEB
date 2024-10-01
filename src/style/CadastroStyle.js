@@ -13,7 +13,7 @@ export const CadastroStyle = styled.main`
 
         .produto-form .title-form{
             font-size: 36px;
-            font-weight: 500;
+            font-weight: 600;
             color: #C7EA46;
         }
 
@@ -25,7 +25,7 @@ export const CadastroStyle = styled.main`
             .subtitle-form {
                 font-size: 18px;
                 font-weight: 600;
-                color: 1E1E1E;
+                color: #4B4B4B;
                 padding-bottom: 5px;
             }
 
@@ -40,6 +40,10 @@ export const CadastroStyle = styled.main`
             }
         }
 
+        .produto-form {
+            padding-bottom: 100px;
+        }
+
         .produto-btn {
             padding-top: 12px;
             text-align: center;
@@ -50,7 +54,7 @@ export const CadastroStyle = styled.main`
             padding: 10px 20px;
             font-size: 18px;
             font-weight: 600;
-            color: #1E1E1E;
+            color: #4B4B4B;
             border: none;
             border-radius: 20px;
             transition: all 0.3s ease-in-out;

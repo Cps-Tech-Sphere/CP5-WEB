@@ -3,24 +3,25 @@ import styled from "styled-components";
 export const NavLoginStyle = styled.nav`
 
     width: 100%;
-    min-height: 5vh;
-    margin-bottom: 30px;
+    padding: 1% 5%;
+    margin-bottom: 24px;
     background: #B4BD91;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     #login_nav {
-        padding-bottom: 18px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
 
         a {
-            font-size: 18px;
+            justify-content: center;
+            font-size: 16px;
             text-decoration: none;
             color: #4B4B4B;
             font-weight: 600;
-            padding: 24px;
             transition: all 0.3s ease-in-out;
         }
     }
@@ -30,13 +31,14 @@ export const NavLoginStyle = styled.nav`
     }
 
     #logout {
-        padding: 18px 0;
+        display: flex;
+        align-items: center;
+        gap: 24px;
         
         span{
-            font-size: 26px;
+            font-size: 16px;
             font-weight: 600;
             color: #fff;
-            padding: 24px;
         }
 
         span.userName{

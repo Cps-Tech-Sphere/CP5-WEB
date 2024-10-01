@@ -16,7 +16,7 @@ export const LoginStyle = styled.main`
         align-items: center;
 
         .login {
-            padding: 80px;
+            padding: 50px;
             background-color: #1E1E1ECC;
             border-radius: 30px;
         }
@@ -24,7 +24,7 @@ export const LoginStyle = styled.main`
 
         .login .titulo-login {
             font-size: 36px;
-            font-weight: 500;
+            font-weight: 600;
             color: #C7EA46;
         }
 
@@ -69,8 +69,8 @@ export const LoginStyle = styled.main`
         }
 
         button:hover{
-            color: #C7EA46;
-            background: #4B4B4B;
+            color: #1E1E1E;
+            background: #9CB837;
         }
     }
 `

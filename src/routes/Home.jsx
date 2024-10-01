@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"; // Adicione useEffect aqui
+import { Link } from "react-router-dom";
 import { HomeStyled } from "../style/HomeStyle";
 import BWGY from "../assets/Imagens/Produtos/bwgy.png";
 import Andarilha from "../assets/Imagens/Produtos/Andarilha.png";
@@ -45,7 +46,10 @@ const Home = () => {
                 <div className="e-veloz">
                     <h1>E-Veloz</h1>
                     <p>A E-Veloz é uma loja especializada em bicicletas elétricas, dedicada a transformar a mobilidade urbana com soluções sustentáveis e acessíveis. Oferecemos produtos inovadores que combinam design, tecnologia e eficiência, ajudando nossos clientes a se locomoverem com mais agilidade e respeitando o meio ambiente. Nosso compromisso é proporcionar uma experiência de compra única, com foco em qualidade e atendimento de excelência, sempre promovendo um futuro mais verde e conectado.</p>
-                    <button>Saiba Mais</button>
+                    
+                    <div className="btn-default">
+                        <Link to="/sobre">Saiba Mais</Link>
+                    </div>
                 </div>
 
                 <h1 className="card-title">Os Nossos Produtos</h1>

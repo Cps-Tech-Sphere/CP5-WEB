@@ -7,7 +7,7 @@ export const ListaStyle = styled.main`
 
     .title-lista {
         font-size: 36px;
-        font-weight: 500;
+        font-weight: 600;
         color: #C7EA46;
         text-align: center;
         padding-bottom: 20px;
@@ -18,12 +18,12 @@ export const ListaStyle = styled.main`
         text-align: center;
     }
 
-    button {
+    .produto-btn button {
         background-color: #C7EA46;
         padding: 10px 20px;
         font-size: 16px;
         font-weight: 600;
-        color: #1E1E1E;
+        color: #4B4B4B;
         border: none;
         border-radius: 20px;
         transition: all 0.3s ease-in-out;
@@ -48,7 +48,7 @@ export const ListaStyle = styled.main`
 
     .tabela-produtos thead {
         background-color: #C7EA46;
-        color: #1E1E1E;
+        color: #4B4B4B;
     }
 
     .tabela-produtos th, .tabela-produtos td {
@@ -87,11 +87,11 @@ export const ListaStyle = styled.main`
 
     .btn-excluir {
         background-color: #C7EA46;
-        color: #1E1E1E;
+        color: #4B4B4B;
         font-size: 30px;
         border: none;
         border-radius: 8px;
-        padding: 8px 12px;
+        padding: 8px 12px 4px;
         cursor: pointer; 
         transition: background-color 0.2s;
     }

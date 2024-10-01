@@ -16,7 +16,10 @@ export const HomeStyled = styled.main`
     }
 
     .container{
-        padding: 125px;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        
     }
 
     .e-veloz{
@@ -25,32 +28,40 @@ export const HomeStyled = styled.main`
     }
 
     .e-veloz h1{
-        font-size: 48px;
+        font-size: 36px;
         color: #C7EA46;
         padding-bottom: 10px;
     }
 
     .e-veloz p{
         font-size: 18px;
-        color: #1E1E1E;
-        padding: 8px;
+        color: #4B4B4B;
     }
 
-    .e-veloz button{
+    .btn-default {
         display: flex;
         justify-content: center;
-        align-items: center;
-        width: 126px;
-        height: 32px;
+        text-align: center;
+        padding: 20px 0 0;
+    }
+
+    .btn-default a{
+        text-decoration: none;
+        padding: 10px;
         background-color: #C7EA46;
-        color: #1E1E1E;
+        color: #4B4B4B;
         border: none;
         border-radius: 12px;
     }
 
+    .btn-default a:hover{
+        background: #9CB837;
+    }
+    
+
     .card-title{
         padding-top: 100px ;
-        font-size: 48px;
+        font-size: 36px;
         font-weight: 600;
         color: #C7EA46;
     }
@@ -65,8 +76,8 @@ export const HomeStyled = styled.main`
     }
 
     .item-produtos{
-        min-width: 260px;
-        max-width: 260px;
+        min-width: 220px;
+        max-width: 220px;
         min-height: 350px;
         max-height: 350px;
         display: flex;
@@ -76,15 +87,16 @@ export const HomeStyled = styled.main`
         text-align: center;
         border: solid 3px #C7EA46;
         border-radius: 24px;
-        padding: 24px;
+        padding: 14px;
+        color: #4B4B4B;
         transition: all 0.5s ease-in-out;
     }
 
     .item-produtos:hover{
-        min-width: 300px;
-        max-width: 300px;
-        min-height: 400px;
-        max-height: 400px;
+        min-width: 230px;
+        max-width: 230px;
+        min-height: 360px;
+        max-height: 360px;
     }
 
     .item-produtos img{
@@ -107,15 +119,15 @@ export const HomeStyled = styled.main`
         align-items: center;
         padding: 10px;
         background-color: #C7EA46;
-        color: #1E1E1E;
+        color: #4B4B4B;
         border: none;
         border-radius: 12px;
         cursor: pointer;
     }
 
     .item-produtos button:hover{
-        color: #C7EA46;
-        background: #4B4B4B;
+        color: #4B4B4B;
+        background: #9CB837;
     }
 
     .avaliacoes-container{
@@ -123,12 +135,12 @@ export const HomeStyled = styled.main`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-bottom: 100px;
+        padding: 20px 0 100px;
         gap: 48px;
     }
 
     .avaliacoes-container .avaliacoes-title{
-        font-size: 48px;
+        font-size: 36px;
         color: #C7EA46;
     }
 

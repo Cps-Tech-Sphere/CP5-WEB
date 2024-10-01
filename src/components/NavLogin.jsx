@@ -24,14 +24,17 @@ const NavLogin = () => {
 
   return (
     <NavLoginStyle>
-      <div id="logout">
-        <span>{userName ? `Usuário logado: ${userName}` : ''}</span>
-        <button className="produto-btn" onClick={handleLogout}><IoPowerSharp /></button>
-      </div>
-
       <div id="login_nav">
         <Link to="/cadastrarproduto">Cadastrar Produtos</Link>
         <Link to="/listaprodutos">Lista de Produtos</Link>
+      </div>
+
+      <div id="logout">
+        <span>{userName ? `Usuário logado: ${userName}` : ''}</span>
+
+        <div className="btn">
+          <button  onClick={handleLogout}><IoPowerSharp /></button>
+        </div>
       </div>
     </NavLoginStyle>
   );
