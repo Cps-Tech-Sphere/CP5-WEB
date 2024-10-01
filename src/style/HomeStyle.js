@@ -70,6 +70,14 @@ export const HomeStyled = styled.main`
         border: solid 3px #C7EA46;
         border-radius: 24px;
         padding: 24px;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .item-produtos:hover{
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 400px;
+        max-height: 400px;
     }
 
     .item-produtos img{
@@ -96,6 +104,11 @@ export const HomeStyled = styled.main`
         border: none;
         border-radius: 12px;
         cursor: pointer;
+    }
+
+    .item-produtos button:hover{
+        color: #C7EA46;
+        background: #4B4B4B;
     }
 
     .avaliacoes{

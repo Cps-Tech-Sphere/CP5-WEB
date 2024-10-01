@@ -53,7 +53,12 @@ export const CadastroStyle = styled.main`
             color: #1E1E1E;
             border: none;
             border-radius: 20px;
+            transition: all 0.3s ease-in-out;
             cursor: pointer;
+        }
+
+        button:hover{
+            background: #9CB837;
         }
     }
 `

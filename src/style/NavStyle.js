@@ -30,7 +30,12 @@ export const NavStyle = styled.header `
             color: #fff;
             font-weight: 500;
             font-size: 20px;
+            transition: all 0.3s ease-in-out;
         }
+    }
+
+    #navegacao ul a:hover{
+        color: #C7EA46;
     }
 
     #perfil {
@@ -41,6 +46,11 @@ export const NavStyle = styled.header `
             text-decoration: none;
             color: #fff;
             font-size: 50px;
+            transition: all 0.3s ease-in-out;
         }
+    }
+
+    #navegacao #perfil a:hover{
+        color: #C7EA46;
     }
 `

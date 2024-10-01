@@ -21,7 +21,12 @@ export const NavLoginStyle = styled.nav`
             color: #4B4B4B;
             font-weight: 600;
             padding: 24px;
+            transition: all 0.3s ease-in-out;
         }
+    }
+
+    #login_nav a:hover{
+        color: #fff;
     }
 
     #logout {
@@ -46,8 +51,13 @@ export const NavLoginStyle = styled.nav`
             color: #1E1E1E;
             border: none;
             border-radius: 20px;
+            transition: all 0.3s ease-in-out;
             cursor: pointer;
         }
         
+    }
+
+    #logout button:hover{
+        background: #9CB837;
     }
 `
