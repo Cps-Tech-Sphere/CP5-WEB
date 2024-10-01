@@ -19,12 +19,12 @@ const Nav =()=> {
                     <Link to="/produtos">Produtos</Link>
                     <Link to="/sobre">Sobre</Link>
                 </ul>
-            </div>
 
-            <div id="perfil">
-                <Link to="/login">
-                    <IoPersonCircleSharp/>
-                </Link>
+                <div id="perfil">
+                    <Link to="/login">
+                        <IoPersonCircleSharp/>
+                    </Link>
+                </div>
             </div>
         </NavStyle>
     )

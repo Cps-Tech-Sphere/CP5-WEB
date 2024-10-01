@@ -10,6 +10,12 @@ export const NavStyle = styled.header `
     justify-content: space-between;
     align-items: center;
 
+    #navegacao {
+        align-items: center;
+        display: flex;
+        gap: 100px;
+    }
+
     #navegacao ul{
         align-items: center;
         display: flex;
