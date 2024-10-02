@@ -120,9 +120,3 @@ e-veloz/
 ├── dados.json            # Arquivo de dados usado pelo json-server
 └── package.json          # Configurações e dependências do projeto
 ```
-
-## 🔗 Links
-
-- **Site Hospedado:** [Link para o site](https://seu-site-hospedado.com)
-- **Vídeo no LinkedIn:** [Link para o vídeo](https://linkedin.com/in/seu-video)
-- **Repositório GitHub:** [E-Veloz GitHub](https://github.com/seu-usuario/e-veloz)
