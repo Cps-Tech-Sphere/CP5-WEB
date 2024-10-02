@@ -120,3 +120,6 @@ e-veloz/
 ├── dados.json            # Arquivo de dados usado pelo json-server
 └── package.json          # Configurações e dependências do projeto
 ```
+## Links
+[Repositório GitHUb](https://github.com/Cps-Tech-Sphere/CP5-WEB)
+[Linkedin Video](https://www.linkedin.com/posts/jean-matheus-mohamed-de-oliveira-263a40295_reactjs-desenvolvimentoweb-engenhariadesoftware-activity-7247390366289547264-JWDd?utm_source=share&utm_medium=member_android)
