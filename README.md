@@ -61,46 +61,29 @@ O projeto utiliza as seguintes tecnologias e ferramentas:
 
 ### Como instalar
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/e-veloz.git
-   cd e-veloz
-   ```
+1. **Download Zip:**
+   - Baixe o arquivo ZIP do projeto através do GitHub.
 
-2. **Instale as dependências do projeto:**
-   ```bash
-   npm install
-   ```
+2. **Abra a pasta no VSCode:**
+   - Após descompactar, abra a pasta no VSCode.
+   - **Obs:** Certifique-se de que há apenas uma pasta com o nome `cp5-web-main`.
 
-3. **Instale o servidor JSON:**
-   - O projeto utiliza o `json-server` para simular um backend. Para instalar o servidor, execute o comando:
-   ```bash
-   npm install json-server
-   ```
+3. **No terminal:**
+   - Execute os seguintes comandos:
+     ```bash
+     npm install
+     npm run backend
+     ```
+   - Em outro terminal, execute:
+     ```bash
+     npm run dev
+     ```
 
-4. **Configure o servidor JSON:**
-   - No arquivo `package.json`, adicione o seguinte script para configurar o `json-server`:
+4. **Abra o link de hospedagem na web:**
+   - Acesse o link disponibilizado no terminal (`http://localhost:5000`) para visualizar o projeto.
 
-   ```json
-   "scripts": {
-     "backend": "json-server --watch dados.json --port 5000"
-   }
-   ```
-
-5. **Inicie o servidor JSON:**
-   - Para executar o servidor e disponibilizar os dados do `dados.json`, utilize o comando:
-   ```bash
-   npm run backend
-   ```
-
-6. **Inicie o servidor de desenvolvimento do React:**
-   - Em um novo terminal, inicie o servidor React:
-   ```bash
-   npm run dev
-   ```
-   
-7. **Acesse o projeto no navegador:**
-   - Abra `http://localhost:5000` para visualizar o site na web.
+5. **Navegue pelas páginas e cadastre produtos:**
+   - Explore as funcionalidades do site e adicione novos produtos conforme necessário.
 
 ## 📂 Estrutura do Arquivo
 
